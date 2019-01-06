@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{%  block title %}{{ post.title }}{% endblock %}
+{% block body %}
+    <p>ID {{ id }}</p>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.text }}</p>
+    <p>{{ post.date | date('g:i:s') }}</p>
+    <p>{{ 560 | price(4) }}</p>
+    Here is the current local {{ local }}
+    <p>{{ message }}</p>
+
+    <p>Env: {{ app.environment }}</p>
+    <p>User: {{ app.user }}</p>
+    <p>Request: {{ app.request }}</p>
+    <p>Session: {{ app.session.isStarted }}</p>
+    <p>Debug {{ app.debug }}</p>
+{% endblock %}

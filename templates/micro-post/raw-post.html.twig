@@ -1,0 +1,14 @@
+<div class="media text-muted pt-3">
+    <img src="https://cdn4.vectorstock.com/i/1000x1000/31/93/user-icon-female-person-symbol-profile-avatar-vector-19553193.jpg" alt="" class="mr-2" width="50px" height="50px">
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-grey">
+                <span class="d-block">
+                    <strong class="text-gray-dark">
+                        @username
+                    </strong>
+                    <small>
+                        {{ post.time | date("d/m/Y") }}
+                    </small>
+                </span>
+        {{ post.text }}
+    </p>
+</div>
